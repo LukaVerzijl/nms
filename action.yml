@@ -1,0 +1,12 @@
+name: 'NMS Install'
+description: 'Install NMS for use in building spigot plugins'
+inputs:
+  rev:
+    description: 'Revision of NMS to use'
+    required: true
+    default: '1.19.2'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.rev }}
