@@ -1,7 +1,7 @@
 FROM alpine
 
-# Install git and java 23
-RUN apk --update add git openjdk23 wget && \
+# Install git and java 21
+RUN apk --update add git openjdk21 wget && \
     rm -rf /var/lib/apt/lists/* && \
     rm /var/cache/apk/*
 
